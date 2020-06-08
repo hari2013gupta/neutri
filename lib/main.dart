@@ -4,7 +4,7 @@ import 'package:neutri/ui/splash.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  final appTitle = 'SOI4U';
+  final appTitle = 'NeutriLife';
 
   @override
   Widget build(BuildContext context) {
