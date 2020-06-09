@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:neutri/model/user.dart';
+import 'package:neutri/ui/mvp_bmi/presenter/bmi_presenter.dart';
+import 'package:neutri/ui/mvp_bmi/views/bmi_component.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key key, this.user}) : super(key: key);
@@ -84,7 +86,7 @@ class MyDrawer extends StatelessWidget {
                 Navigator.pop(context);
                 // Navigator.of(context).pushNamed('/page2');
                 Navigator.of(context).push(MaterialPageRoute(
-                  // builder: (BuildContext context) => new HomePageBMI(new BasicBMIPresenter()),
+                  builder: (BuildContext  context) => new HomePageBMI(new BasicBMIPresenter()),
                 ));
                   // Navigator.push(
                   //     context, MaterialPageRoute(builder: (context) => Page2(title: "Page 2",)));
